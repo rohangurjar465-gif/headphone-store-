@@ -1,0 +1,328 @@
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+    margin: 0;
+    color: #343a40;
+}
+
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+    background: white;
+    padding: 20px 0;
+}
+
+
+.nav-link{
+    color: #df4938;
+}
+
+
+.cart-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-popup{
+    position:absolute;
+    top:45px;
+    right:0;
+    width:350px;
+    padding:20px;
+    background:white;
+    color:#333;
+    display:none;
+    z-index:9999;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.cart-box:hover .cart-popup{display:block}
+.popup-product{display:flex;align-items:center;gap:15px;padding:15px 0;border-bottom:1px solid #ddd}
+.popup-product img{width:70px;height:70px;object-fit:contain}
+.popup-product-info{flex:1}
+.popup-product-info p{margin:0 0 4px;font-weight:400}
+.remove-popup-item{width:25px;height:25px;padding:0;border:1px solid #aaa;border-radius:50%;background:#fff;color:#888;font-size:20px;line-height:20px;cursor:pointer}
+
+
+/* ========================= */
+/* CHECKOUT SECTION */
+/* ========================= */
+
+.checkout-section{
+    background: #f8f8f8;
+}
+
+
+.checkout-page-title{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+/* ========================= */
+/* COUPON */
+/* ========================= */
+
+.coupon-message{
+    border-top: 2px solid #df4938;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+}
+
+
+.coupon-message i{
+    color: #df4938;
+    margin-right: 15px;
+}
+
+
+.coupon-message span{
+    color: #df4938;
+}
+
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+label span{
+    color: #df4938;
+}
+
+
+.form-control,
+.form-select{
+    height: 48px;
+    border-radius: 0;
+}
+
+
+textarea.form-control{
+    height: auto;
+}
+
+
+/* ========================= */
+/* SECTION TITLE */
+/* ========================= */
+
+.section-title{
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ========================= */
+/* ORDER BOX */
+/* ========================= */
+
+.order-box{
+    background: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+
+.order-box h3{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+/* ========================= */
+/* PRODUCT HEADING */
+/* ========================= */
+
+.order-heading{
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: bold;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ========================= */
+/* PRODUCT */
+/* ========================= */
+
+.checkout-product{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ========================= */
+/* SUBTOTAL + TOTAL */
+/* ========================= */
+
+.order-row{
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.total-row{
+    font-size: 18px;
+}
+
+
+/* ========================= */
+/* PAYMENT MESSAGE */
+/* ========================= */
+
+.payment-message{
+    border-top: 2px solid #df4938;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    display: flex;
+
+    gap: 15px;
+
+    line-height: 1.8;
+}
+
+
+.payment-message i{
+    color: #df4938;
+}
+
+
+/* ========================= */
+/* PLACE ORDER BUTTON */
+/* ========================= */
+
+.place-order-btn{
+    width: 100%;
+
+    border: none;
+
+    background: #df4938;
+
+    color: white;
+
+    padding: 18px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    margin-top: 30px;
+}
+
+
+.place-order-btn:hover{
+    background: #c93d2e;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer-main{
+    background: #151515;
+
+    color: white;
+}
+
+
+.footer-main h4{
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+.footer-main p{
+    color: #aaa;
+}
+
+
+.discover-btn{
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #df4938;
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+}
+
+
+.footer-bottom{
+    background: #101010;
+
+    color: white;
+
+    padding: 20px 0;
+}
+
+
+.footer-bottom p{
+    margin: 0;
+
+    color: #aaa;
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width: 768px){
+
+
+    .checkout-page-title{
+        font-size: 30px;
+    }
+
+
+    .order-box{
+        padding: 20px;
+    }
+
+
+    .coupon-message{
+        line-height: 2;
+    }
+
+
+}

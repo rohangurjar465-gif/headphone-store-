@@ -1,0 +1,304 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #fff;
+    min-height: 120px;
+    padding: 0;
+}
+
+.navbar .container {
+    max-width: 1200px;
+}
+
+.about-logo {
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    color: #df4938 !important;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c73728 !important;
+}
+
+.cart-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+}
+
+.cart-link {
+    color: #f1f1f1 !important;
+    font-weight: 700;
+}
+
+.cart-link i {
+    color: #f1f1f1;
+}
+
+.person-icon {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+/* =========================
+   PRODUCT DETAIL
+========================= */
+
+.product-detail-page {
+    background: #f5f5f5;
+    padding: 70px 0;
+    min-height: 800px;
+}
+
+.product-detail-image {
+    background: white;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-detail-image img {
+    width: 100%;
+    max-height: 570px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   CART POPUP
+========================= */
+
+.cart-popup {
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    width: 350px;
+    max-height: 450px;
+
+    overflow-y: auto;
+
+    background: white;
+    color: #333;
+
+    padding: 20px;
+
+    display: none;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.cart-popup.show {
+    display: block;
+}
+
+
+/* =========================
+   POPUP PRODUCT
+========================= */
+
+.popup-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-product img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+.popup-product-info {
+    flex: 1;
+}
+
+.popup-product-info p {
+    margin: 0 0 4px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove-popup-item {
+    width: 25px;
+    height: 25px;
+
+    padding: 0;
+
+    border: 1px solid #aaa;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #888;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+.remove-popup-item:hover {
+    background: #df4938;
+    color: white;
+}
+
+
+/* =========================
+   POPUP SUBTOTAL
+========================= */
+
+.popup-subtotal {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   POPUP BUTTONS
+========================= */
+
+.view-cart-btn,
+.checkout-popup-btn {
+    display: block;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.view-cart-btn {
+    border: 1px solid #df4938;
+    color: #df4938;
+}
+
+.view-cart-btn:hover {
+    background: #df4938;
+    color: white;
+}
+
+.checkout-popup-btn {
+    background: #df4938;
+    color: white;
+}
+
+.checkout-popup-btn:hover {
+    background: #c73728;
+    color: white;
+}
+
+
+/* =========================
+   ADD TO CART BUTTON
+========================= */
+
+.add-cart {
+    background: #df4938 !important;
+    border: none;
+}
+
+.add-cart:hover {
+    background: #c73728 !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .navbar {
+        min-height: 90px;
+    }
+
+    .about-logo {
+        width: 75px;
+        height: 60px;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .cart-box {
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .cart-popup {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar {
+        min-height: 80px;
+    }
+
+    .about-logo {
+        width: 70px;
+        height: 55px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .cart-popup {
+        width: 300px;
+        right: -10px;
+        transform: none;
+    }
+
+    .product-detail-page {
+        padding: 40px 0;
+    }
+
+    .product-detail-image {
+        min-height: 350px;
+    }
+
+    .product-detail-image img {
+        max-height: 330px;
+    }
+}

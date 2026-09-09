@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+    background-color: var(--container--prodcut);
+}
+
+:root {
+    --red: #df4938;
+    --container--prodcut:#f2f0f0;
+    --red-bg: #bd292e;
+    --footer-x:#383838;
+    --footer:#2B2B2B;
+    
+}
+/* ==================== ABOUT HERO ==================== */
+
+.about-hero{
+    height:340px;
+    background-image:url("img/img-88.jpg");
+    background-size:cover;
+    background-position:center 100%;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    position:relative;
+}
+
+.about-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(6, 6, 6, 0.50);
+    z-index:1;
+}
+
+.about-hero .navbar,
+.about-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+/* ==================== NAVBAR ==================== */
+
+.about-hero .navbar{
+    position:relative;
+    z-index:10;
+        margin-left: 1px;
+
+}
+
+.about-logo{
+    width:68px;
+    height:auto;
+}
+
+.about-hero .nav-link{
+    font-size:16px;
+    font-weight:700;
+}
+
+.about-hero .navbar-brand{
+    margin-left:0;
+}
+.cart-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+/* ==================== HERO CONTENT ==================== */
+
+.about-hero-content{
+    height:250px;
+    
+}
+
+.about-hero-content h1{
+    font-size:50px;
+    font-weight:800;
+    margin-bottom: 180px;
+    margin-left: 44px;
+}
+.team-img{
+    height:300px;
+    object-fit:cover;
+    padding: auto;
+}
+
+.social{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#df4938;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+   
+}
+.contaier-photo img{
+    height: 900px;
+    
+}
+.container-fluid h4{
+color: var(--red);
+}
+/* ==================== FOOTER ==================== */
+
+.main-footer{
+    background:#111;
+    
+}
+
+.copy-footer{
+    background:#111;
+}
+
+/* ==================== MOBILE ==================== */
+
+@media(max-width:991px){
+
+    .about-hero{
+        height:420px;
+        background-size:auto 520px;
+        background-position:center 72%;
+    }
+
+    .about-hero-content{
+        height:330px;
+    }
+
+    .about-hero h1{
+        font-size:55px;
+        text-align:center;
+    }
+
+    .about-logo{
+        width:65px;
+        height:65px;
+    }
+     .warranty-section{
+        height:700px;
+    }
+
+    .warranty-section .container{
+        position:relative !important;
+        top:auto !important;
+        left:auto !important;
+        transform:none !important;
+        padding-top:100px;
+    }
+
+    .warranty-section > img{
+        position:absolute;
+        inset:0;
+    }
+
+}
+
+/* ==================== SMALL MOBILE ==================== */
+
+@media(max-width:575px){
+
+    .about-hero{
+        height:400px;
+        background-size:auto 480px;
+        background-position:center 72%;
+    }
+
+    .about-hero-content{
+        height:320px;
+    }
+
+    .about-hero h1{
+        font-size:48px;
+        text-align:center;
+        margin-top:80px;
+    }
+
+    .about-images img{
+        height:auto;
+    }
+    .about-logo{
+        width: 40px;
+    }
+     .team-img{
+        height:220px;
+    }
+
+    .social{
+        width:30px;
+        height:30px;
+    }
+}
+
+
+* popup *//* =========================
+   CART POPUP
+========================= */
+
+.cart-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-popup {
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    width: 350px;
+    max-height: 450px;
+    overflow-y: auto;
+
+    background: white;
+    color: #333;
+
+    padding: 20px;
+
+    display: none;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.cart-popup.show {
+    display: block;
+}
+
+
+/* Popup Product */
+
+.popup-product {
+    display: flex;
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-product img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+.popup-product p {
+    margin: 0;
+}
+
+
+/* Subtotal */
+
+.popup-subtotal {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    font-weight: bold;
+}
+
+
+/* Buttons */
+
+.view-cart-btn,
+.checkout-popup-btn {
+
+    display: block;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.view-cart-btn {
+
+    border: 1px solid #df4938;
+
+    color: #df4938;
+
+}
+
+
+.checkout-popup-btn {
+
+    background: #df4938;
+
+    color: white;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .cart-popup {
+
+        position: absolute;
+
+        right: -10px;
+
+        width: 300px;
+
+    }
+
+}
+
+.popup-product { align-items: center; }
+.popup-product-info { flex: 1; }
+.popup-product-info p { margin: 0 0 4px; font-weight: 400; }
+.remove-popup-item { width: 25px; height: 25px; padding: 0; border: 1px solid #aaa; border-radius: 50%; background: #fff; color: #888; font-size: 20px; line-height: 20px; cursor: pointer; }

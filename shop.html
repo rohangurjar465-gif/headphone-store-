@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP - Headphones Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg position-relative z-3 pt-1 ms-4 ">
+
+        <div class="container">
+
+            <a class="navbar-brand ms-lg-5" href="main.html">
+                <img src="img/logo-2.svg" class="about-logo mt-1" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list text-white fs-6"></i>
+            </button>
+
+            <div class="collapse navbar-collapse py-3 mb-1 me-4" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto gap-lg-1 fw-bold mb-1 ">
+                    <li class="nav-item"><a class="nav-link text-black" href="main.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="shop.html">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <div class="cart-box">
+
+                    <a href="cart.html"
+                        class="d-flex align-items-center gap-2 text-black fw-bold fs-6 text-decoration-none">
+
+                        <span id="cartTotal">
+                            Cart/₹0.00
+                        </span>
+
+                        <i class="bi bi-bag fs-5"></i>
+
+                    </a>
+
+                    <i class="bi bi-person-fill fs-5 text-black"></i>
+
+
+                    <div class="cart-popup">
+
+                        <div id="popupProducts"></div>
+
+
+                        <div class="popup-subtotal">
+
+                            <span>
+                                Subtotal:
+                            </span>
+
+                            <span id="popupSubtotal">
+                                ₹0.00
+                            </span>
+
+                        </div>
+
+
+                        <a href="cart.html" class="view-cart-btn">
+
+                            VIEW CART
+
+                        </a>
+
+
+                        <a href="checkout.html" class="checkout-popup-btn">
+
+                            CHECKOUT
+
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section class="py-5">
+
+            <div class="container">
+
+                <!-- Breadcrumb -->
+
+                <div class="mb-4">
+                    <a href="main.html" style="text-decoration:none">
+                        <span class="text-secondary">Home / </span>
+                    </a>
+                    <span>SHOP</span>
+                </div>
+
+
+                <!-- Result + Sorting -->
+
+                <div class="row align-items-center mb-5">
+
+                    <div class="col-12 col-md-6">
+                        <p class="mb-0 fs-5 text-secondary">
+                            Showing all 4 results
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-3 mt-md-0 text-md-end">
+
+                        <select class="form-select d-inline-block w-auto">
+                            <option value="low">Sort by price: low to high</option>
+                            <option value="high">Sort by price: high to low</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTS -->
+                <div class="row g-4">
+                    <!-- PRODUCT 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="product-card">
+
+                            <img src="img/gold-1.jpg" class="product-img img-fluid w-100" alt="Gold Headphones">
+
+                            <p class="text-secondary mt-3 mb-1">
+                                Uncategorized
+                            </p>
+
+                            <h5 class="product-name fw-bold">
+                                GOLD HEADPHONES TWS
+                            </h5>
+
+                            <h6 class="product-price fw-bold">
+                                ₹1000
+                            </h6>
+
+                            <button class="add-cart btn btn-danger rounded-pill px-4 fw-bold">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="product-card" style="cursor:pointer;">
+                            <img src="img/green-1.jpg" class="product-img img-fluid w-100" alt="Green Headphones">
+                            <p class="text-secondary mt-3 mb-1">
+                                Uncategorized
+                            </p>
+
+                            <h5 class="product-name fw-bold">
+                                GREEN HEADPHONES TWS
+                            </h5>
+
+                            <h6 class="product-price fw-bold">
+                                ₹10000
+                            </h6>
+                            <button class="add-cart btn btn-danger rounded-pill px-4 fw-bold">
+                                ADD TO CART
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="product-card" style="cursor:pointer;">
+
+                            <img src="img/red-1.jpg" class="product-img img-fluid w-100" alt="Red Headphones">
+
+                            <p class="text-secondary mt-3 mb-1">
+                                Uncategorized
+                            </p>
+
+                            <h5 class="product-name fw-bold">
+                                HEADPHONES RED TWS
+                            </h5>
+
+                            <h6 class="product-price fw-bold">
+                                ₹1000
+                            </h6>
+                            <button class="add-cart btn btn-danger rounded-pill px-4 fw-bold">
+                                ADD TO CART
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="product-card" style="cursor:pointer;">
+
+                            <img src="img/violet-1.jpg" class="product-img img-fluid w-100" alt="Violet Headphones">
+
+                            <p class="text-secondary mt-3 mb-1">
+                                Uncategorized
+                            </p>
+
+                            <h5 class="product-name fw-bold">
+                                VIOLET HEADPHONES TWS
+                            </h5>
+
+                            <h6 class="product-price fw-bold">
+                                ₹1000
+                            </h6>
+                            <button class="add-cart btn btn-danger rounded-pill px-4 fw-bold">
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="text-white">
+
+        <section class="bg-dark py-5">
+
+            <div class="container">
+
+                <div class="row g-4 text-center text-lg-start">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">
+                            ABOUT US
+                        </h4>
+
+                        <p class="text-secondary mt-4">
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">
+                            COMPANY
+                        </h4>
+
+                        <p class="mt-4">ABOUT TWS</p>
+                        <p>MY ACCOUNT</p>
+                        <p>CONTACT</p>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">
+                            LINKS
+                        </h4>
+
+                        <p class="mt-4">HOME</p>
+                        <p>ABOUT US</p>
+                        <p>SHOP</p>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">
+                            CONTACT
+                        </h4>
+
+                        <p class="mt-4">
+                            Behadi, Khategaon, Dewas, Madhya Pradesh
+                        </p>
+
+                        <p>
+                            +91 7999629787
+                        </p>
+
+                        <p>
+                            rohangurjar465@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="bg-dark border-top border-secondary py-3">
+
+            <div class="container">
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+
+                    <p class="mb-0">
+                        © 2026 TWS. All Rights Reserved.
+                    </p>
+
+                    <p class="mb-0">
+                        Designed & Developed by Rohan GurJar
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+
+    <!-- PRODUCT MODAL -->
+
+    <script src="web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US - Headphones Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <header>
+
+        <section class="about-hero">
+
+            <nav class="navbar navbar-expand-lg position-relative z-3 pt-1 ">
+
+                <div class="container">
+
+                    <a class="navbar-brand ms-lg-5" href="main.html">
+                        <img src="img/logo-2.svg" class="about-logo mt-1" alt="Logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="bi bi-list text-white fs-3"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse py-3 gap-lg-1 mb-1" id="navbarNav">
+
+                        <ul class="navbar-nav mx-auto gap-lg-1 fw-bold">
+                            <li class="nav-item"><a class="nav-link text-white" href="main.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT US</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="shop.html">SHOP</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a></li>
+                        </ul>
+
+                        <div class="cart-box">
+
+                            <a href="cart.html"
+                                class="d-flex align-items-center gap-2 text-white fw-bold fs-6 text-decoration-none">
+
+                                <span id="cartTotal">
+                                    Cart/₹0.00
+                                </span>
+
+                                <i class="bi bi-bag fs-5"></i>
+
+                            </a>
+
+                            <i class="bi bi-person-fill fs-5 text-white"></i>
+
+
+                            <div class="cart-popup">
+
+                                <div id="popupProducts"></div>
+
+
+                                <div class="popup-subtotal">
+
+                                    <span>
+                                        Subtotal:
+                                    </span>
+
+                                    <span id="popupSubtotal">
+                                        ₹0.00
+                                    </span>
+
+                                </div>
+
+
+                                <a href="cart.html" class="view-cart-btn">
+
+                                    VIEW CART
+
+                                </a>
+
+
+                                <a href="checkout.html" class="checkout-popup-btn">
+
+                                    CHECKOUT
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="container text-white">
+                <div class="row align-items-center about-hero-content">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="display-1 fw-bold text-white">ABOUT US</h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+
+    <main>
+
+        <section class="py-5 about-images">
+            <div class="container py-lg-5">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6"><img src="img/img-1a.jpg" class="img-fluid w-100 rounded-2"
+                            alt="Person wearing headphones"></div>
+                    <div class="col-12 col-lg-6"><img src="img/img-2a.jpg" class="img-fluid w-100 rounded-2"
+                            alt="Headphones"></div>
+                </div>
+            </div>
+        </section>
+        <!-- do photo k nich se -->
+        <section class="">
+            <div class="container-fluid text-center">
+                <h4 class="fw-bold">HEADPHONES SPECIALISTS</h4>
+                <h1 class="display-4 fw-bold">LEARN OUR STORY</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-12 py-4">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo. Nulla porttitor<br> accumsan tincidunt. Donec
+                            sollicitudin molestie malesuada. Sed porttitor lectus nibh. Pellentesque in ipsum id orci
+                            porta dapibus.
+                            <br>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus
+                            convallis quis ac lectus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LEARN OUR STORY k nich se -->
+        <section class="py-5">
+
+            <div class="container text-center mb-5">
+                <h4 class="text-danger fw-bold">OUR EXPERTS</h4>
+                <h1 class="fw-bold display-4">MEET THE TEAM</h1>
+            </div>
+
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-6 col-lg-3 text-center">
+                        <img src="img/image03.jpg" class="img-fluid rounded-2 team-img" alt="Jessica Brown">
+                        <h3 class="fw-bold fs-4 mt-4">JESSICA BROWN</h3>
+                        <p class="text-secondary">Marketing</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3 text-center">
+                        <img src="img/image04.jpg" class="img-fluid w-100 rounded-2 team-img" alt="Kevin Martin">
+                        <h3 class="fw-bold fs-4 mt-4">KEVIN MARTIN</h3>
+                        <p class="text-secondary">Sales</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3 text-center">
+                        <img src="img/image02.jpg" class="img-fluid w-100 rounded-2 team-img" alt="Stiv Doe">
+                        <h3 class="fw-bold fs-4 mt-4">STIV DOE</h3>
+                        <p class="text-secondary">Manager</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3 text-center">
+                        <img src="img/image01.jpg" class="img-fluid w-100 rounded-2 team-img" alt="Sarah Albert">
+                        <h3 class="fw-bold fs-4 mt-4">SARAH ALBERT</h3>
+                        <p class="text-secondary">Marketing</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- employ and manager e nich se  -->
+
+        <section class="warranty-section position-relative">
+            <img src="img/warranty.jpg" class="w-100 h-100 object-fit-cover" alt="Man wearing headphones">
+
+            <div class="container position-absolute top-50 start-50 translate-middle">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-lg-5">
+                        <div class="bg-white rounded-2 p-4 p-lg-5 warranty-box">
+                            <h2 class="fw-bold mb-5">PRODUCT WARRANTY</h2>
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <i class="bi bi-check-circle-fill text-danger"></i>
+                                <span class="fw-bold">WE PROVIDE FULL PROTECTION</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <i class="bi bi-check-circle-fill text-danger"></i>
+                                <span class="fw-bold">SKILLED AND PROFESSIONAL AGENT</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <i class="bi bi-check-circle-fill text-danger"></i>
+                                <span class="fw-bold">INSURANCE THAT FITS YOUR NEEDS</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mb-4">
+                                <i class="bi bi-check-circle-fill text-danger"></i>
+                                <span class="fw-bold">DEVICE INSURANCE IN MINUTE</span>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-check-circle-fill text-danger"></i>
+                                <span class="fw-bold">MEET THE TRUSTED SALESMAN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- warranty ke nich se  -->
+        <section class="container py-5 px-5 px-lg-5">
+
+            <div class="text-center mb-5">
+                <h4 class="fw-bold text-danger mb-2">
+                    CUSTOMER REVIEWS
+                </h4>
+
+                <h2 class="display-4 fw-bold">
+                    WHAT DO THEY SAY
+                </h2>
+            </div>
+
+
+            <div class="row gx-4 px-3 gy-4 text-center">
+
+                <!-- Customer 1 -->
+                <div class="col-12 col-md-6">
+
+                    <div class="bg-light p-5 h-100">
+
+                        <div class="text-warning fw-bold fs-4 mb-3">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="fw-bold fs-4">
+                            BETTER THAN EXPECTED
+                        </h3>
+
+                        <p class="text-secondary mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar dapibus leo.
+                        </p>
+
+                        <img src="img/customer-1.png" class="rounded-circle mt-3 " width="50" height="50"
+                            alt="Jimmy Cage">
+
+                        <h6 class="fw-bold mt-2">
+                            JIMMY CAGE
+                        </h6>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Customer 2 -->
+                <div class="col-12 col-md-6">
+
+                    <div class="bg-light p-5 h-100">
+
+                        <div class="text-warning fw-bold fs-4 mb-3">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="fw-bold fs-4">
+                            BETTER THAN EXPECTED
+                        </h3>
+
+                        <p class="text-secondary mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar dapibus leo.
+                        </p>
+
+                        <img src="img/customer-2.png" class="rounded-circle mt-3 " width="50" height="50"
+                            alt="Jimmy Cage">
+
+                        <h6 class="fw-bold mt-2">
+                            JIMMY CAGE
+                        </h6>
+
+                    </div>
+
+                </div>
+
+                <!-- Customer 3 -->
+                <div class="col-12 col-md-6">
+
+                    <div class="bg-light p-4 h-100">
+
+                        <div class="text-warning fw-bold fs-4 mb-3">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="fw-bold fs-4">
+                            VERY COMFORTABLE
+                        </h3>
+
+                        <p class="text-secondary mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar dapibus leo.
+                        </p>
+
+                        <img src="img/customer-1.png" class="rounded-circle mt-3" width="50" height="50"
+                            alt="Michael Jones">
+
+                        <h6 class="fw-bold mt-2">
+                            MICHAEL JONES
+                        </h6>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Customer 4 -->
+                <div class="col-12 col-md-6">
+
+                    <div class="bg-light p-4 h-100">
+
+                        <div class="text-warning fw-bold fs-4 mb-3">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="fw-bold fs-4">
+                            VALUE FOR MONEY
+                        </h3>
+
+                        <p class="text-secondary mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar dapibus leo.
+                        </p>
+
+                        <img src="img/customer-2.png" class="rounded-circle mt-3" width="50" height="50"
+                            alt="David Cage">
+
+                        <h6 class="fw-bold mt-2">
+                            DAVID CAGE
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <section class="main-footer text-white py-5">
+
+            <div class="container">
+
+                <div class="row g-4 text-center text-lg-start">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">ABOUT US</h4>
+
+                        <p class="text-secondary mt-4">Curabitur non nulla sit amet nisl tempus convallis quis ac
+                            lectus. Nulla quis lorem ut libero.</p>
+
+                        <a href="#" class="btn btn-danger rounded-pill px-4 py-2 fw-bold mt-3">DISCOVER NOW</a>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">COMPANY</h4>
+
+                        <div class="mt-4">
+
+                            <p>ABOUT TWS</p>
+
+                            <p>MY ACCOUNT</p>
+
+                            <p>CONTACT</p>
+
+                            <p>TERMS & CONDITIONS</p>
+
+                            <p>HELP & FAQ</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">LINKS</h4>
+
+                        <div class="mt-4">
+
+                            <p>HOME</p>
+
+                            <p>ABOUT US</p>
+
+                            <p>SHOP</p>
+
+                            <p>CONTACT</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <h4 class="fw-bold">CONTACT</h4>
+
+                        <div class="mt-4">
+
+                            <p>2231 REDBUD DRIVE WHITESTONE, NY 11357</p>
+
+                            <p>+11 0569 2354 238</p>
+
+                            <p>rohangurjar465@gmail.com</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="copy-footer text-white border-top border-secondary py-3">
+
+            <div class="container">
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+
+                    <p class="mb-0">© 2026 TWS. All Rights Reserved .</p>
+
+                    <p class="mb-0">Designed & Developed by Rohan GurJar</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
